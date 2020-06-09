@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-title>Log into your Account</ion-title>
+      </ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+      <ion-item class="vert-space">
+        <h1 class="center">ToDo App</h1>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="email" placeholder ="student@email.com" [(ngModel)]="this.email"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" placeholder ="*********" [(ngModel)]="this.password"></ion-input>
+        </ion-item>
+    </ion-list>
+  <ion-button expand="block" color="secondary" shape="round" (click)="login()">Login</ion-button>
+  <ion-button fill="clear" color="secondary" (click)="signup()">Don't have account? Signup Here</ion-button>
+  <ion-button  fill="clear" color="secondary"  (click)="resetPwd()">
+    Forgot Password?
+  </ion-button>
+  </ion-content>
